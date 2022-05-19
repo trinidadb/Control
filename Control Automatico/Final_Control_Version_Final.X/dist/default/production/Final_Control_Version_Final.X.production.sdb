@@ -1,0 +1,395 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"1 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X/UART.h
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"33
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"47
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+[v i2_UART_Write UART_Write `(v  1 e 1 0 ]
+"53
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+[v i2_UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"39 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"56
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"70
+[v _int_2_str int_2_str `(v  1 e 1 0 ]
+"81
+[v _PORT_configurar PORT_configurar `(v  1 e 1 0 ]
+"86
+[v _ADC_configurar ADC_configurar `(v  1 e 1 0 ]
+"108
+[v _turn_on_ADC turn_on_ADC `(v  1 e 1 0 ]
+"112
+[v _TMR0_configurar TMR0_configurar `(v  1 e 1 0 ]
+"118
+[v _initialize_TMR0 initialize_TMR0 `(v  1 e 1 0 ]
+[v i2_initialize_TMR0 initialize_TMR0 `(v  1 e 1 0 ]
+"127
+[v _turn_on_TMR0 turn_on_TMR0 `(v  1 e 1 0 ]
+[s S184 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1413 C:\Program Files\Microchip\xc8\v2.31\pic\include\proc\pic18f4620.h
+[s S193 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S202 . 1 `S184 1 . 1 0 `S193 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES202  1 e 1 @3986 ]
+[s S224 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1857
+[s S233 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S242 . 1 `S224 1 . 1 0 `S233 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES242  1 e 1 @3988 ]
+[s S359 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"2520
+[s S368 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S372 . 1 `S359 1 . 1 0 `S368 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES372  1 e 1 @3997 ]
+"3487
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3499
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3511
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+[s S299 . 1 `uc 1 ADCS 1 0 :3:0 
+`uc 1 ACQT 1 0 :3:3 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"4395
+[s S304 . 1 `uc 1 ADCS0 1 0 :1:0 
+`uc 1 ADCS1 1 0 :1:1 
+`uc 1 ADCS2 1 0 :1:2 
+`uc 1 ACQT0 1 0 :1:3 
+`uc 1 ACQT1 1 0 :1:4 
+`uc 1 ACQT2 1 0 :1:5 
+]
+[u S311 . 1 `S299 1 . 1 0 `S304 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES311  1 e 1 @4032 ]
+[s S264 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"4470
+[s S267 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S274 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+`uc 1 VCFG01 1 0 :1:4 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S279 . 1 `S264 1 . 1 0 `S267 1 . 1 0 `S274 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES279  1 e 1 @4033 ]
+[s S109 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4574
+[s S112 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S116 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S123 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S126 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S129 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S132 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S135 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S138 . 1 `S109 1 . 1 0 `S112 1 . 1 0 `S116 1 . 1 0 `S123 1 . 1 0 `S126 1 . 1 0 `S129 1 . 1 0 `S132 1 . 1 0 `S135 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES138  1 e 1 @4034 ]
+"4656
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4663
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+[s S327 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"5879
+[s S334 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S340 . 1 `S327 1 . 1 0 `S334 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES340  1 e 1 @4053 ]
+"5941
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"5948
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S60 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6407
+[s S69 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S78 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S82 . 1 `S60 1 . 1 0 `S69 1 . 1 0 `S78 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES82  1 e 1 @4082 ]
+"6829
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"6973
+[v _CREN CREN `VEb  1 e 0 @32092 ]
+"7840
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"7990
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"8068
+[v _SYNC SYNC `VEb  1 e 0 @32100 ]
+"8293
+[v _TRISC6 TRISC6 `VEb  1 e 0 @31910 ]
+"8296
+[v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
+"8332
+[v _TRMT TRMT `VEb  1 e 0 @32097 ]
+"8386
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"21 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X\main.c
+[v _num_as_string num_as_string `VE[7]uc  1 e 7 0 ]
+"22
+[v _val val `VEi  1 e 2 0 ]
+"39
+[v _main main `(v  1 e 1 0 ]
+{
+"53
+} 0
+"127
+[v _turn_on_TMR0 turn_on_TMR0 `(v  1 e 1 0 ]
+{
+"129
+} 0
+"108
+[v _turn_on_ADC turn_on_ADC `(v  1 e 1 0 ]
+{
+"110
+} 0
+"118
+[v _initialize_TMR0 initialize_TMR0 `(v  1 e 1 0 ]
+{
+"126
+} 0
+"53 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X/UART.h
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+"55
+[v UART_Write_Text@i i `i  1 a 2 29 ]
+"53
+[v UART_Write_Text@text text `*.35uc  1 p 2 25 ]
+"58
+} 0
+"47
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 24 ]
+"51
+} 0
+"1
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"3
+[v UART_Init@x x `ui  1 a 2 50 ]
+"1
+[v UART_Init@baudrate baudrate `Cl  1 p 4 38 ]
+"22
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 34 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 33 ]
+[v ___aldiv@counter counter `uc  1 a 1 32 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 24 ]
+[v ___aldiv@divisor divisor `l  1 p 4 28 ]
+"41
+} 0
+"112 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X\main.c
+[v _TMR0_configurar TMR0_configurar `(v  1 e 1 0 ]
+{
+"117
+} 0
+"81
+[v _PORT_configurar PORT_configurar `(v  1 e 1 0 ]
+{
+"85
+} 0
+"86
+[v _ADC_configurar ADC_configurar `(v  1 e 1 0 ]
+{
+"107
+} 0
+"56
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"67
+} 0
+"118
+[v i2_initialize_TMR0 initialize_TMR0 `(v  1 e 1 0 ]
+{
+"126
+} 0
+"53 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X/UART.h
+[v i2_UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+"55
+[v i2UART_Write_Text@i i `i  1 a 2 5 ]
+"53
+[v i2UART_Write_Text@text text `*.35uc  1 p 2 1 ]
+"58
+} 0
+"47
+[v i2_UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v i2UART_Write@data data `uc  1 a 1 wreg ]
+[v i2UART_Write@data data `uc  1 a 1 wreg ]
+[v i2UART_Write@data data `uc  1 a 1 0 ]
+"51
+} 0
+"70 C:\Users\Trini\MPLABXProjects\Control_Automatico\Final_Control_Version_Final.X\main.c
+[v _int_2_str int_2_str `(v  1 e 1 0 ]
+{
+[v int_2_str@num num `i  1 p 2 14 ]
+"77
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"41
+} 0
