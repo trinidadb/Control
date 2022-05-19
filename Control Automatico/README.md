@@ -1,2 +1,2 @@
-# Control Automatico
+# Automatic Control
 Project I presented
